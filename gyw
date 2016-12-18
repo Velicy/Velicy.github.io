@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Night</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="night.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="moon"></div>
+        <div class="star"></div>
+        <pre id="hide">
+听首歌吧
+press space (ˉ(∞)ˉ) 
+===========================
+test
+============================
+嘿嘿
+
+等彩蛋？
+      
+To be continued		
+ </pre>
+        <pre id="show"></pre>
+        <audio src="a.mp3">may i feel</audio>
+    </div>
+    <script type="text/javascript" src="night.js"></script>
+</body>
+
+</html>
