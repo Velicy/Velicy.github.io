@@ -3,21 +3,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hexo</title>
+  <title>Git基础(一)--安装和配置SSH-Key（参见@Golden Era&#39;s Blog） | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Git基础(一)–安装和配置SSH-Key（参见@Golden Era’s Blog）前言
-工欲先善其事，必先利其器。在工作之中，得心应手的工具能让你更多的专注于工作本身，提高效率。在编写程序方面，如何管理代码一直是一个很令人头痛的问题。尤其是代码规模越来越大的时候，如何记录每一次更改？如何在不更改源代码基础上开发一个新功能？如何做回滚？等等……这时候，Git应运而生。  首先，需纠正很多人，包">
+  <meta name="description" content="前言
+工欲先善其事，必先利其器。在工作之中，得心应手的工具能让你更多的专注于工作本身，提高效率。在编写程序方面，如何管理代码一直是一个很令人头痛的问题。尤其是代码规模越来越大的时候，如何记录每一次更改？如何在不更改源代码基础上开发一个新功能？如何做回滚？等等……这时候，Git应运而生。  首先，需纠正很多人，包括我从学校过度到工作之后的一个想法，就是无论做什么都必须先了解原理。这种想法在工作中不可">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/2016/12/18/Git基础(一)/index.html">
+<meta property="og:title" content="Git基础(一)--安装和配置SSH-Key（参见@Golden Era's Blog）">
+<meta property="og:url" content="http://yoursite.com/2017/10/18/Git基础(一)/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Git基础(一)–安装和配置SSH-Key（参见@Golden Era’s Blog）前言
-工欲先善其事，必先利其器。在工作之中，得心应手的工具能让你更多的专注于工作本身，提高效率。在编写程序方面，如何管理代码一直是一个很令人头痛的问题。尤其是代码规模越来越大的时候，如何记录每一次更改？如何在不更改源代码基础上开发一个新功能？如何做回滚？等等……这时候，Git应运而生。  首先，需纠正很多人，包">
-<meta property="og:updated_time" content="2017-10-18T14:59:17.170Z">
+<meta property="og:description" content="前言
+工欲先善其事，必先利其器。在工作之中，得心应手的工具能让你更多的专注于工作本身，提高效率。在编写程序方面，如何管理代码一直是一个很令人头痛的问题。尤其是代码规模越来越大的时候，如何记录每一次更改？如何在不更改源代码基础上开发一个新功能？如何做回滚？等等……这时候，Git应运而生。  首先，需纠正很多人，包括我从学校过度到工作之后的一个想法，就是无论做什么都必须先了解原理。这种想法在工作中不可">
+<meta property="og:updated_time" content="2017-10-18T15:26:48.039Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="Git基础(一)–安装和配置SSH-Key（参见@Golden Era’s Blog）前言
-工欲先善其事，必先利其器。在工作之中，得心应手的工具能让你更多的专注于工作本身，提高效率。在编写程序方面，如何管理代码一直是一个很令人头痛的问题。尤其是代码规模越来越大的时候，如何记录每一次更改？如何在不更改源代码基础上开发一个新功能？如何做回滚？等等……这时候，Git应运而生。  首先，需纠正很多人，包">
+<meta name="twitter:title" content="Git基础(一)--安装和配置SSH-Key（参见@Golden Era's Blog）">
+<meta name="twitter:description" content="前言
+工欲先善其事，必先利其器。在工作之中，得心应手的工具能让你更多的专注于工作本身，提高效率。在编写程序方面，如何管理代码一直是一个很令人头痛的问题。尤其是代码规模越来越大的时候，如何记录每一次更改？如何在不更改源代码基础上开发一个新功能？如何做回滚？等等……这时候，Git应运而生。  首先，需纠正很多人，包括我从学校过度到工作之后的一个想法，就是无论做什么都必须先了解原理。这种想法在工作中不可">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -68,18 +68,27 @@
       <div class="outer">
         <section id="main"><article id="post-Git基础(一)" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2016/12/18/Git基础(一)/" class="article-date">
-  <time datetime="2016-12-18T09:20:57.394Z" itemprop="datePublished">2016-12-18</time>
+    <a href="/2017/10/18/Git基础(一)/" class="article-date">
+  <time datetime="2017-10-18T14:04:22.000Z" itemprop="datePublished">2017-10-18</time>
 </a>
     
   </div>
   <div class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Git基础(一)--安装和配置SSH-Key（参见@Golden Era&#39;s Blog）
+    </h1>
+  
+
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <hr>
-<h2 id="Git基础-一-–安装和配置SSH-Key（参见-Golden-Era’s-Blog）"><a href="#Git基础-一-–安装和配置SSH-Key（参见-Golden-Era’s-Blog）" class="headerlink" title="Git基础(一)–安装和配置SSH-Key（参见@Golden Era’s Blog）"></a>Git基础(一)–安装和配置SSH-Key（参见@Golden Era’s Blog）</h2><p>前言</p>
+        <p>前言</p>
 <p>工欲先善其事，必先利其器。在工作之中，得心应手的工具能让你更多的专注于工作本身，提高效率。在编写程序方面，如何管理代码一直是一个很令人头痛的问题。尤其是代码规模越来越大的时候，如何记录每一次更改？如何在不更改源代码基础上开发一个新功能？如何做回滚？等等……这时候，Git应运而生。<br>  <br>首先，需纠正很多人，包括我从学校过度到工作之后的一个想法，就是无论做什么都必须先了解原理。这种想法在工作中不可取，工作是以优先完成任务为目的，深究原理会消耗大量工作时间。了解原理可以在空闲时间琢磨，切不可因此耽搁进程。</p>
 <p>Git和GitHub的区别</p>
 <p>关于Git和Github的区别，一句话以概之。Git是一个开源代码版本管理工具，GitHub是基于该工具做的一个项目托管平台，和Github功能类似的还有Bitbucket、Coding，它们使用的工具都是Git，只是各自提供一些特色功能，如权限管理、issue提交、Group管理等。</p>
@@ -101,13 +110,29 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/12/18/Git基础(一)/" data-id="cj8x65vn600000ctpdq8qnhva" class="article-share-link">Delen</a>
+      <a data-url="http://yoursite.com/2017/10/18/Git基础(一)/" data-id="cj8x6sg5e0000m8tphj3rvplf" class="article-share-link">Delen</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git-web/">git web</a></li></ul>
+
     </footer>
   </div>
   
     
+<nav id="article-nav">
+  
+    <a href="/2017/10/18/test/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Nieuwer</strong>
+      <div class="article-nav-title">
+        
+          问题收集
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
   
 </article>
 
@@ -119,15 +144,29 @@
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Labels</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/git-web/">git web</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web-bug-解决方案/">web bug 解决方案</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/git-web/" style="font-size: 10px;">git web</a> <a href="/tags/web-bug-解决方案/" style="font-size: 10px;">web bug 解决方案</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
     <h3 class="widget-title">Archieven</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">October 2017</a></li></ul>
     </div>
   </div>
 
@@ -140,7 +179,11 @@
       <ul>
         
           <li>
-            <a href="/2016/12/18/Git基础(一)/">(no title)</a>
+            <a href="/2017/10/18/test/">问题收集</a>
+          </li>
+        
+          <li>
+            <a href="/2017/10/18/Git基础(一)/">Git基础(一)--安装和配置SSH-Key（参见@Golden Era&#39;s Blog）</a>
           </li>
         
       </ul>
